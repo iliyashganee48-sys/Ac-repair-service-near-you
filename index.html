@@ -1,1 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="AC Repair Service Near You - Professional Split AC, Inverter AC Service, Repair, Installation, Gas Check and PCB Repair in Goa.">
+
+<title>AC Repair Service Near You | AC Service & Repair</title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f9ff;
+    color:#10243e;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar{
+    background:#061a2f;
+    color:white;
+    padding:10px 6%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    font-size:14px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    background:white;
+    padding:15px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:900;
+    color:#0878df;
+}
+
+.logo span{
+    color:#08a86a;
+}
+
+.navlinks{
+    display:flex;
+    gap:25px;
+}
+
+.navlinks a{
+    color:#163652;
+    font-weight:700;
+}
+
+.navlinks a:hover{
+    color:#0878df;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+    padding:13px 20px;
+    border-radius:12px;
+    font-weight:800;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.blue{
+    background:#0878df;
+    color:white;
+}
+
+.green{
+    background:#08ae6d;
+    color:white;
+}
+
+.white{
+    background:white;
+    color:#0878df;
+    border:2px solid #d8eafb;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    padding:65px 6%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+    background:
+    linear-gradient(135deg,#e9f7ff,#ffffff);
+}
+
+.badge{
+    display:inline-block;
+    background:#dff3ff;
+    color:#0878df;
+    padding:9px 16px;
+    border-radius:30px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(45px,6vw,75px);
+    line-height:1;
+    color:#061a2f;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#0878df;
+}
+
+.hero p{
+    font-size:18px;
+    color:#5c6f82;
+    max-width:650px;
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.hero-image{
+    height:470px;
+    border-radius:30px;
+    background:
+    url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+    box-shadow:0 25px 60px rgba(8,120,223,.25);
+    position:relative;
+}
+
+.hero-tag{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    background:white;
+    padding:14px 18px;
+    border-radius:15px;
+    font-weight:800;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:70px 6%;
+}
+
+.section-title{
+    text-align:center;
+    max-width:750px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#687b8e;
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid #e3edf7;
+    box-shadow:0 12px 35px rgba(18,59,93,.08);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 40px rgba(18,59,93,.14);
+}
+
+.card-image{
+    height:200px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:22px;
+}
+
+.card-body h3{
+    margin-bottom:8px;
+    font-size:22px;
+}
+
+.card-body p{
+    color:#66788b;
+    margin-bottom:15px;
+}
+
+.book-btn{
+    display:inline-block;
+    padding:10px 15px;
+    background:#eef7ff;
+    color:#0878df;
+    border-radius:10px;
+    font-weight:800;
+}
+
+/* =========================
+   PCB SECTION
+========================= */
+
+.pcb-section{
+    background:#061a2f;
+    color:white;
+}
+
+.pcb-section .section-title p{
+    color:#c3d3e1;
+}
+
+.pcb-section .card{
+    background:#0d2b48;
+    border-color:#214761;
+}
+
+.pcb-section .card-body p{
+    color:#c1cfdb;
+}
+
+.pcb-section .book-btn{
+    background:#123c60;
+    color:white;
+}
+
+/* =========================
+   WHY US
+========================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:18px;
+}
+
+.why-box{
+    background:white;
+    padding:28px 20px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+}
+
+.why-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+    background:#eef8ff;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:18px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.number{
+    width:48px;
+    height:48px;
+    background:#0878df;
+    color:white;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    margin:auto;
+    font-weight:900;
+    font-size:20px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    margin:60px 6%;
+    padding:50px;
+    border-radius:30px;
+    background:
+    linear-gradient(120deg,#0878df,#0da9e8);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.cta h2{
+    font-size:38px;
+}
+
+.cta p{
+    opacity:.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#041426;
+    color:#c6d5e3;
+    padding:45px 6%;
+    display:grid;
+    grid-template-columns:
+    2fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer-logo{
+    color:white;
+    font-size:24px;
+    font-weight:900;
+}
+
+footer a{
+    color:#c6d5e3;
+    display:block;
+    margin:8px 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .navlinks{
+        display:none;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .why-grid,
+    .process-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    footer{
+        grid-template-columns:
+        1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero{
+        padding:45px 5%;
+    }
+
+    .hero h1{
+        font-size:50px;
+    }
+
+    .hero-image{
+        height:310px;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+
+    .services-grid,
+    .why-grid,
+    .process-grid,
+    footer{
+        grid-template-columns:1fr;
+    }
+
+    .cta{
+        margin:35px 5%;
+        padding:32px 22px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+<span>
+⚡ Fast Response • Professional AC Technician
+</span>
+
+<span>
+📞 918855961867 • Goa Service
+</span>
+
+</div>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+AC <span>REPAIR</span> SERVICE
+</div>
+
+<div class="navlinks">
+
+<a href="#services">Services</a>
+
+<a href="#pcb">PCB Repair</a>
+
+<a href="#why">Why Us</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<a
+class="btn green"
+href="https://wa.me/918855961867?text=Hello%2C%20I%20need%20AC%20service%20or%20repair."
+>
+WhatsApp
+</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div>
+
+<span class="badge">
+❄️ SPLIT • INVERTER • WINDOW AC
+</span>
+
+<h1>
+AC Repair
+<br>
+<span>Service Near You</span>
+</h1>
+
+<p>
+Professional AC Service, Repair & Installation
+for homes, shops and offices.
+
+Cooling problem, water leakage, gas checking,
+electrical fault and PCB repair — all in one place.
+</p>
+
+<div class="actions">
+
+<a
+class="btn blue"
+href="tel:918855961867"
+>
+📞 Call Now
+</a>
+
+<a
+class="btn green"
+href="https://wa.me/918855961867?text=Hello%2C%20I%20want%20to%20book%20AC%20service."
+>
+💬 Book on WhatsApp
+</a>
+
+<a
+class="btn white"
+href="#services"
+>
+View Services
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<div class="hero-tag">
+🛠️ AC Service & Repair • Goa
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="section-title">
+
+<h2>
+Our AC Services
+</h2>
+
+<p>
+Har important AC service ko alag card aur
+Book Now button ke saath design kiya gaya hai.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+❄️ Normal AC Service
+</h3>
+
+<p>
+Indoor & outdoor cleaning,
+filter cleaning and performance checking.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20normal%20AC%20service."
+>
+Book Now →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1607400201515-c2c41c07d2d9?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+🔧 AC Repair
+</h3>
+
+<p>
+Cooling problem, fan issue,
+noise, starting and other AC faults.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20AC%20repair."
+>
+Book Repair →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+⚡ AC Installation
+</h3>
+
+<p>
+Split AC installation,
+shifting and installation checking.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20AC%20installation."
+>
+Book Installation →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- CARD 4 -->
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+🧊 Gas Check & Charging
+</h3>
+
+<p>
+Cooling diagnosis,
+leak checking and refrigerant service.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20AC%20gas%20checking."
+>
+Book Gas Service →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- CARD 5 -->
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+💧 Water Leakage
+</h3>
+
+<p>
+Indoor water leakage,
+drain blockage and related checking.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=My%20AC%20has%20water%20leakage."
+>
+Book Leakage Check →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- CARD 6 -->
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+🔌 Electrical Checking
+</h3>
+
+<p>
+Supply, wiring, capacitor,
+relay, fan and electrical checking.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20AC%20electrical%20checking."
+>
+Book Electrical Check →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PCB -->
+
+<section
+id="pcb"
+class="pcb-section"
+>
+
+<div class="section-title">
+
+<h2>
+🔬 PCB Repair & Inverter AC
+</h2>
+
+<p>
+Modern inverter AC ke electronic faults ke liye
+dedicated PCB repair section.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+PCB Repair / Checking
+</h3>
+
+<p>
+Power section, SMPS, relay,
+sensor circuits and board fault checking.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20AC%20PCB%20checking."
+>
+Book PCB Check →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+Inverter AC Repair
+</h3>
+
+<p>
+PCB, IPM, compressor start/stop,
+sensor and communication fault diagnosis.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20Inverter%20AC%20repair."
+>
+Book Inverter Repair →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1597423244037-8c3c0f2c0f5d?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-body">
+
+<h3>
+Component-Level Checking
+</h3>
+
+<p>
+PCB component identification
+and testing after proper inspection.
+</p>
+
+<a
+class="book-btn"
+href="https://wa.me/918855961867?text=I%20need%20PCB%20component%20checking."
+>
+Ask Technician →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- WHY US -->
+
+<section id="why">
+
+<div class="section-title">
+
+<h2>
+Why Customers Choose Us
+</h2>
+
+<p>
+Simple, professional and customer-friendly service experience.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+<div class="why-box">
+
+<div class="why-icon">
+🛠️
+</div>
+
+<h3>
+Professional Work
+</h3>
+
+<p>
+AC problem ko properly check karke
+work karne ka approach.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">
+⚡
+</div>
+
+<h3>
+Fast Response
+</h3>
+
+<p>
+Call ya WhatsApp se
+service request bhejiye.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">
+❄️
+</div>
+
+<h3>
+All AC Types
+</h3>
+
+<p>
+Split, Inverter aur
+other common AC systems.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">
+📍
+</div>
+
+<h3>
+Goa Service
+</h3>
+
+<p>
+Goa area me AC service
+aur repair availability.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROCESS -->
+
+<section
+class="process"
+id="process"
+>
+
+<div class="section-title">
+
+<h2>
+How Booking Works
+</h2>
+
+<p>
+Customer ko sirf call ya WhatsApp karna hai.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="step">
+
+<div class="number">
+1
+</div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+Call ya WhatsApp karein.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">
+2
+</div>
+
+<h3>
+Tell Problem
+</h3>
+
+<p>
+AC brand, type aur problem batayein.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">
+3
+</div>
+
+<h3>
+Inspection
+</h3>
+
+<p>
+AC ko check karke fault identify kiya jayega.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">
+4
+</div>
+
+<h3>
+Repair
+</h3>
+
+<p>
+Diagnosis ke baad required work.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<div
+class="cta"
+id="contact"
+>
+
+<div>
+
+<h2>
+AC Problem? Let's Check It.
+</h2>
+
+<p>
+Split AC • Inverter AC • Cooling • Leakage • PCB • Installation
+</p>
+
+</div>
+
+
+<div class="actions">
+
+<a
+class="btn green"
+href="https://wa.me/918855961867?text=Hello%2C%20I%20want%20to%20book%20AC%20service%20or%20repair."
+>
+WhatsApp Now
+</a>
+
+<a
+class="btn white"
+href="tel:918855961867"
+>
+Call 918855961867
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+
+<div class="footer-logo">
+AC Repair Service Near You
+</div>
+
+<p>
+Professional AC service, repair,
+installation and PCB checking.
+</p>
+
+</div>
+
+
+<div>
+
+<b>
+Services
+</b>
+
+<a href="#services">
+AC Service
+</a>
+
+<a href="#services">
+AC Repair
+</a>
+
+<a href="#services">
+Installation
+</a>
+
+<a href="#pcb">
+PCB Repair
+</a>
+
+</div>
+
+
+<div>
+
+<b>
+Contact
+</b>
+
+<a href="tel:918855961867">
+📞 918855961867
+</a>
+
+<a href="https://wa.me/918855961867">
+💬 WhatsApp
+</a>
+
+<p>
+📍 Goa, India
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+  </html>
